@@ -21,7 +21,7 @@
   if (initialRoute && initialRoute !== '/') {
     location.hash = initialRoute;
   }
-  ["style.cz39BYlI.css"].forEach(function(href){
+  [].forEach(function(href){
     var l = document.createElement('link');
     l.rel = 'stylesheet';
     l.href = base + href;
@@ -35,6 +35,6 @@
   });
   var e = document.createElement('script');
   e.type = 'module';
-  e.src = base + "Bki4e8qb.js";
+  e.src = base + "undefined";
   document.body.appendChild(e);
 })();

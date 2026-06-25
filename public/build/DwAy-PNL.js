@@ -1,0 +1,1 @@
+function f(){const t=window.wp??null;function r(n,i){return t?.i18n?.__(n,i)??n}function o(n,i,u,c){return t?.i18n?._n(n,i,u,c)??(u===1?n:i)}function _(n,...i){return t?.i18n?.sprintf(n,...i)??n}return{__:r,_n:o,sprintf:_}}export{f as u};

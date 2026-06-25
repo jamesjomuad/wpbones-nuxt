@@ -3,12 +3,20 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+const isBuild = !process.argv.includes('dev')
 
 export default defineNuxtConfig({
   ssr: false,
   srcDir: resolve(__dirname, 'resources', 'js'),
 
   modules: ['@nuxt/ui'],
+
+  appConfig: {
+    ui: {
+      primary: 'blue',
+      gray: 'slate',
+    },
+  },
 
   app: {
     baseURL: '/',
@@ -21,16 +29,7 @@ export default defineNuxtConfig({
     },
   },
 
-  vite: {
-    build: {
-      cssCodeSplit: false,
-      rollupOptions: {
-        output: {
-          inlineDynamicImports: true,
-        },
-      },
-    },
-  },
+  // vite config removed to test dev server
 
   css: ['~/assets/css/main.css'],
 
@@ -133,6 +132,10 @@ export default defineNuxtConfig({
         console.error('[wpkirk] build:done hook error:', e)
       }
     },
+  },
+
+  experimental: {
+    viteEnvironmentApi: true,
   },
 
   compatibilityDate: '2025-06-01',

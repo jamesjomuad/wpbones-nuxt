@@ -108,10 +108,10 @@ Icons use the `heroicons` collection by default:
 <UButton icon="heroicons:plus" label="Add" />
 ```
 
-## Author
+## Maintainer
 
 **jamesjomuad**
 
 ---
 
-Built with [WP Bones](https://wpbones.com/) and [Nuxt](https://nuxt.com/).
+Built on [WP Bones](https://wpbones.com/) and [Nuxt](https://nuxt.com/).

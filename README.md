@@ -107,3 +107,11 @@ Icons use the `heroicons` collection by default:
 <UIcon name="heroicons:cog-6-tooth" />
 <UButton icon="heroicons:plus" label="Add" />
 ```
+
+## Author
+
+**jamesjomuad**
+
+---
+
+Built with [WP Bones](https://wpbones.com/) and [Nuxt](https://nuxt.com/).

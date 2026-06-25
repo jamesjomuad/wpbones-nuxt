@@ -1,0 +1,29 @@
+.card {
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.card .title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card .description {
+  color: #646970;
+  margin: 0 0 12px;
+}
+
+.card .button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card .greeting {
+  margin-top: 12px;
+  font-weight: 500;
+}

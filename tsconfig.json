@@ -1,0 +1,36 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "checkJs": false,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "paths": {
+      "~/*": ["./resources/js/*"],
+      "@/*": ["./resources/js/*"]
+    }
+  },
+  "include": [
+    "resources/js/app.vue",
+    "resources/js/app/**/*",
+    "resources/js/pages/**/*",
+    "resources/js/composables/**/*",
+    "resources/js/assets/**/*",
+    "nuxt.config.ts",
+    "vitest.config.ts",
+    ".nuxt/nuxt.d.ts"
+  ],
+  "exclude": ["node_modules", "public", "vendor", ".output"]
+}
